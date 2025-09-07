@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brunch Bill Splitter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Brunch Bill Splitter</h1>
+    <p class="description">Assign each food and drink item to the guests who enjoyed it.  
+    Once every item has at least one guest checked, click &quot;Calculate&quot; to see how much each person owes including tax and tip.</p>
+
+    <!-- Participants section -->
+    <section id="participants-section">
+      <h2>Participants</h2>
+      <div id="participants"></div>
+      <p class="note">Hint: To change &ldquo;Carlos BF&rdquo; to the correct last name, simply edit the last name field below.</p>
+    </section>
+
+    <!-- Items table -->
+    <section id="items-section">
+      <h2>Items</h2>
+      <div class="table-wrapper">
+        <table id="items-table">
+          <!-- The header and rows will be populated dynamically by script.js -->
+        </table>
+      </div>
+    </section>
+
+    <button id="calculate-btn" class="btn">Calculate</button>
+
+    <!-- Results section -->
+    <section id="results-section" style="display:none;">
+      <h2>Results</h2>
+      <div id="results"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
